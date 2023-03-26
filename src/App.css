@@ -1,0 +1,147 @@
+
+/*se asigna el container con el fondo a 100vh para abarcar todo la pantalla*/
+.container{
+  box-sizing: content-box;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/*se asignan las distintas imagenes que utilizaremos como fondo*/
+.imagen1 {
+  background-image:url(./imagenes/espacio/img1.jpg);
+}
+.imagen2 {
+  background-image:url(./imagenes/espacio/img2.jpg);
+}
+.imagen3 {
+  background-image:url(./imagenes/espacio/img3.jpg);
+}
+.imagen4 {
+  background-image:url(./imagenes/espacio/img4.jpg);
+}
+
+/*Se acomodan los eleementos del contenedor*/
+
+
+.centro{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(213, 135, 98);
+  opacity: .8;
+  border-radius: 50%;
+  background-image: url(./imagenes/planeta.png);
+  background-size: cover;
+ 
+}
+
+
+.centro:hover{
+  opacity: 1;
+  transition: ease-in-out .3s;
+}
+
+/*Se da estilo al titulo, la frase y el author*/
+.titulo{
+  width: 500px;
+  text-align: center;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 50px;
+  color:rgb(187, 133, 63);
+  text-shadow:  0 0 5px #ffffff  ;
+}
+
+.phrase { 
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  color: rgb(209, 215, 217);
+  font-family: 'Kaisei Opti', serif;
+  font-size: 30px;
+  padding: 40px 30px ;
+  margin-top: 80px;
+  text-shadow:  0 0 10px black, 0 0 10px black , 0 0 10px black 
+}
+
+.author{
+  font-family: 'Kaisei Opti', serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: -70px;
+  color: antiquewhite;
+}
+/*Se agrega estilo al boton*/
+
+.button{
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  padding: 16px 32px;
+  appearance: none;
+   background: linear-gradient(0deg, rgba(195, 34, 155, 0.75) 5%, rgba(45, 253, 239, 0.75) 100%); 
+  opacity: .6;
+  color: #221a1a;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 20px;
+
+}
+.button:hover{
+  background-color: rgb(142, 56, 142);
+  color:#fff;
+  transition:  ease-in-out .3s;
+  opacity: .9;
+
+}
+ 
+@media (min-width: 670px) {
+  .phrase {
+      width: 350px;
+      height: 200px;
+      font-size: 25px;
+      color: rgb(192, 201, 207);
+      margin-top: 70px;
+  }
+  .centro{
+      width: 400px;
+      height: 400px;
+      opacity: .8;     
+  }
+
+  .author{
+    font-family: 'Kaisei Opti', serif;
+    font-size: 20px;
+    padding: 20px;
+    color: antiquewhite;
+    margin-top: -50px;
+  }
+  .titulo{
+    font-size: 45px;
+  }
+  
+}
+
+
+@media (max-width: 670px) {
+  .container {
+      width: 100vh;
+      height: 300vh;
+     justify-content:flex-start;
+  }   
+}
