@@ -33,15 +33,16 @@
 
 
 .centro{
-  width: 500px;
-  height: 500px;
+  width: 180px;
+  height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
   background-color: rgb(213, 135, 98);
   opacity: .8;
   border-radius: 50%;
+  margin-left: -380px;
   background-image: url(./imagenes/planeta.png);
   background-size: cover;
  
@@ -58,36 +59,37 @@
   width: 500px;
   text-align: center;
   font-family: 'Kaisei Opti', serif;
-  font-size: 50px;
+  font-size: 20px;
   color:rgb(187, 133, 63);
   text-shadow:  0 0 5px #ffffff  ;
+  margin-left: -380px;
+  margin-top: 20px;
 }
 
 .phrase { 
   align-items: center;
-  width: 350px;
-  height: 300px;
+  width: 150px;
+  height: 50px;
   text-align: center;
   color: rgb(209, 215, 217);
   font-family: 'Kaisei Opti', serif;
-  font-size: 30px;
+  font-size: 12px;
   padding: 40px 30px ;
-  margin-top: 80px;
   text-shadow:  0 0 10px black, 0 0 10px black , 0 0 10px black 
 }
 
 .author{
   font-family: 'Kaisei Opti', serif;
-  font-size: 20px;
+  font-size: 10px;
   padding: 20px;
-  margin-top: -70px;
   color: antiquewhite;
+  margin-top: -15px;
 }
 /*Se agrega estilo al boton*/
 
 .button{
-  height: 50px;
-  width: 200px;
+  height: 10px;
+  width: 80px;
   display: inline-block;
   padding: 16px 32px;
   appearance: none;
@@ -99,7 +101,8 @@
   cursor: pointer;
   position: relative;
   font-family: 'Kaisei Opti', serif;
-  font-size: 20px;
+  font-size: 15px;
+  margin-left: -260px;
 
 }
 .button:hover{
