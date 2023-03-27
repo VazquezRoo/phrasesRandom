@@ -105,7 +105,7 @@
 
 }
  
- @media (min-width: 670px) { 
+ @media (min-width: 620px) { 
     .phrase {
         height: 200px;
         font-size: 25px;
@@ -144,7 +144,7 @@
   }
 
 
-@media (max-width: 670px) {
+@media (max-width: 620px) {
   .container {
       width: 100vh;
       height: 300vh;
